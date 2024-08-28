@@ -26,7 +26,7 @@ app.use(logger("dev"));
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 
-app.use("/api/v1/", indexRouter);
+app.use("/api/v2", indexRouter);
 
 const port = PORT || 8000;
 server.listen(port, () => {
